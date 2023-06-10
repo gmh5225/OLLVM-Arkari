@@ -130,7 +130,8 @@ bool StringEncryption::runOnModule(Module &M) {
         Entry->DecStatus = DecStatus;
         ConstantStringPool.push_back(Entry);
         CSPEntryMap[&GV] = Entry;
-        collectConstantStringUser(&GV, ConstantStringUsers);
+        // test
+        // collectConstantStringUser(&GV, ConstantStringUsers);
       }
     }
   }
